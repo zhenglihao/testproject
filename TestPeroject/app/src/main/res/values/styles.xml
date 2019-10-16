@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 自定义dialog样式-->
+    <style name="Mydialog" parent="android:Theme.Holo.Light.Dialog">
+        <!--背景-->
+        <item name="android:windowBackground">@drawable/shape_rect_conner</item>
+        <item name="android:windowFrame">@null</item>
+        <!--背景是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--动画方式-->
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <!--自定义dialog动画样式-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_exit_anim</item>
+    </style>
+
+
+</resources>
